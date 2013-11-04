@@ -1,0 +1,29 @@
+﻿<br />
+<a href="#/admin/register" id="register-link-btn">Register Admin</a>
+<a href="#/users" id="get-users-btn">Get All Users</a>
+<a href="#/monsters" id="get-monsters-btn">Get All Monsters</a>
+<a href="#/items" id="get-items-btn">Get All Items</a>
+<a href="#" id="logout-btn" ng-click="logoutAdmin()">Logout</a>
+
+<form id="admin-login-form">
+    <label for="tb-monster-name">Name</label>
+    <input type="text" id="tb-monster-name" ng-model="monster.name" />
+    <br />
+    <label for="tb-mele-attack-monster">Mele Attack</label>
+    <input type="text" id="tb-mele-attack-monster" ng-model="monster.meleAttack" />
+    <br />
+    <label for="tb-magic-attack-monster">Magic Attack</label>
+    <input type="text" id="tb-magic-attack-monster" ng-model="monster.magicAttack" />
+    <br />
+    <label for="tb-magic-defense-monster">Magic Defense</label>
+    <input type="text" id="tb-magic-defense-monster" ng-model="monster.magicDefense" />
+    <br />
+    <label for="tb-mele-defense-monster">Mele Defense</label>
+    <input type="text" id="tb-mele-defense-monster" ng-model="monster.meleDefense" />
+    <br />
+    <label for="tb-hp-monster">HP</label>
+    <input type="text" id="tb-hp-monster" ng-model="monster.hp" />
+    <br />
+    <br />
+    <a href="#/monsters" id="mnstr-create-btn" ng-click="createMonster()">Create</a>
+</form>

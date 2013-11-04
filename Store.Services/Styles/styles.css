@@ -1,0 +1,318 @@
+﻿body, ul, div, li, header, h1, h2, h3, span, p
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    font-family: 'Segoe UI';
+}
+
+#app
+{
+    margin: auto;
+    width: 720px;
+    padding: 3%;
+    background-color: #eee;
+    -webkit-box-shadow: 0 0 15px #000;
+    box-shadow: 0 0 15px #000;
+}
+
+#main-nav header h2
+{
+    display: inline-block;
+    margin: 0 120px 20px;
+}
+
+#main-nav header button
+{
+    float: right;
+}
+
+#main-view
+{
+    position: relative;
+    margin: 2% 0;
+    width: 100%;
+}
+
+/*  Main Display    */
+
+#display
+{
+    position: relative;
+    margin: 0 0 0 25%;
+    height: 500px;
+}
+
+    #display .stats
+    {
+        position: absolute;
+        font-size: 0.85rem;
+        top: 35px;
+    }
+
+.stats strong
+{
+    font-size: 0.95rem;
+}
+
+.stats p
+{
+    margin: 2px;
+}
+
+#display > img
+{
+    position: absolute;
+    margin: 0 10%;
+    height: 80%;
+}
+
+#display .list-items
+{
+    position: absolute;
+    bottom: 10px;
+    padding: 2px;
+    width: 100%;
+    height: 50px;
+}
+
+#display ul .list-item
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+    border: 1px solid #888;
+}
+
+.list-items img
+{
+    margin: 10%;
+    height: 80%;
+    width: 80%;
+}
+
+#display ul .equiped
+{
+    border: 1px solid #fa0;
+    -webkit-box-shadow: #fa0 0 0 5px inset;
+    box-shadow: #fa0 0 0 5px inset;
+}
+
+.shop-item:hover,
+#display ul .list-item:hover,
+div.monster ul#attacks li:hover,
+.player:hover
+{
+    -webkit-box-shadow: #000 0 0 5px;
+    box-shadow: #000 0 0 5px;
+    cursor: pointer;
+}
+
+.shop-item:active,
+#display ul .list-item:active,
+div.monster ul#attacks li:active,
+.player:active
+{
+    -webkit-box-shadow: #000 0 0 5px inset;
+    box-shadow: #000 0 0 5px inset;
+}
+
+/*  Actions    */
+#actions
+{
+    float: left;
+    width: 20%;
+    padding: 1%;
+}
+
+    #actions h3
+    {
+        border-bottom: 1px solid #000;
+        margin: 0 3px 10px;
+        padding: 0 20px;
+    }
+
+    #actions .action
+    {
+        position: relative;
+        display: inline-block;
+        margin: 5% 10%;
+        padding: 5%;
+        width: 70%;
+        height: 50px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+    }
+
+        #actions .action:hover
+        {
+            -webkit-box-shadow: #000 0 0 5px;
+            box-shadow: #000 0 0 5px;
+            cursor: pointer;
+        }
+
+        #actions .action:active
+        {
+            -webkit-box-shadow: #000 0 0 5px inset;
+            box-shadow: #000 0 0 5px inset;
+        }
+
+#shop .action img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+/*  Shop    */
+.shop-item
+{
+    display: inline-block;
+    margin: 2%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    position: relative;
+}
+
+.shop-item p
+{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    display: none;
+    border: 1px solid #888;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #ddd;
+}
+
+.shop-item:hover p
+{
+    display: inline-block;
+    z-index: 10;
+}
+
+.shop-item img
+{
+    margin: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+/*  monster */
+
+    .start-battle button
+    {
+        position: absolute;
+        top: 5%;
+        right: 19%;
+    }
+    /*
+    div.monster p
+    {
+        font-size: 0.8rem;
+        margin: 2px;
+    }
+
+        div.monster p strong
+        {
+            font-size: 0.9rem;
+        }
+
+    div.monster img
+    {
+        position: relative;
+        bottom: 60px;
+        left: 20px;
+    }*/
+
+/*  PvP */
+.player
+{
+    display: inline-block;
+    margin: 5px;
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+    .player img
+    {
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .player p
+    {
+        border-top: 1px solid #888;
+        margin: 0 5px;
+    }
+
+/*  Battle */
+#battle
+{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+    #battle div
+    {
+        position: absolute;
+        width: 60%;
+        height: 40%;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        padding: 20px;
+        background: #ddd;
+    }
+
+        #battle div img
+        {
+            position: absolute;
+            height: 80%;
+            bottom: 10px;
+            right: 0;
+        }
+
+        #battle div p
+        {
+            font-size: 0.8rem;
+        }
+
+            #battle div p strong
+            {
+                font-size: 0.9rem;
+            }
+
+    #battle #oponent
+    {
+        bottom: 0;
+        right: 0;
+    }
+
+    #battle #hero-battle
+    {
+        top: 0;
+        left: 0;
+    }

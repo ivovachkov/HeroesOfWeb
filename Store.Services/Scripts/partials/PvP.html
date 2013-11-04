@@ -1,0 +1,29 @@
+﻿<aside id="actions">
+    <h3>Actions</h3>
+    <div class="action" data-bind="click: main">
+        <p>Main</p>
+    </div>
+    <div class="action" data-bind="click: monster">
+        <p>Attack monster</p>
+    </div>
+    <div class="action" data-bind="click: player">
+        <p>Attack player</p>
+    </div>
+    <div class="action" data-bind="click: heal">
+        <p>Train</p>
+    </div>
+    <div class="action" data-bind="click: shop">
+        <p>Shop</p>
+    </div>
+</aside>
+<div id=display">
+    <h3>PvP</h3>
+    <div data-bind="source: players" data-template="pvp-template"></div>
+</div>
+
+<script type="text/x-kendo-template" id="pvp-template">
+    <div class="player" >
+        <img src="/Images/player.png" />
+        <p data-bind="text: username"></p>
+    </div>
+</script>

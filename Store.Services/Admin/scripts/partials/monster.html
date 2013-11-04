@@ -1,0 +1,18 @@
+﻿<br />
+<a href="#/admin/register" id="register-link-btn">Register Admin</a>
+<a href="#/users" id="get-users-btn">Get All Users</a>
+<a href="#/monsters" id="get-monsters-btn">Get All Monsters</a>
+<a href="#/items" id="get-items-btn">Get All Items</a>
+<a href="#" id="logout-btn" ng-click="logoutAdmin()">Logout</a>
+
+<br />
+<br />
+<a href="#/monster/{{monster.id}}/update" id="mnstr-update-btn">Update monster</a>
+<ul id="monster-details">
+    <li>Name: <span class="detail">{{monster.name}}</span></li>
+    <li>Mele Attack: <span class="detail">{{monster.meleAttack}}</span></li>
+    <li>Magic Attack: <span class="detail">{{monster.magicAttack}}</span></li>
+    <li>Magic Defense: <span class="detail">{{monster.magicDefense}}</span></li>
+    <li>Mele Defense: <span class="detail">{{monster.meleDefense}}</span></li>
+    <li>HP: <span class="detail">{{monster.hp}}</span></li>
+</ul>

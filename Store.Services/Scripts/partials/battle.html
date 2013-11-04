@@ -1,0 +1,45 @@
+﻿<aside id="actions">
+    <h3>Actions</h3>
+    <div class="action" data-bind="click: attackWithWeapon">
+        <p>Attack with weapon</p>
+    </div>
+    <div class="action" data-bind="click: attackWithMagic">
+        <p>Attack with magic</p>
+    </div>
+    <div class="action" data-bind="click: drinkPotion">
+        <p>Drink potion</p>
+    </div>
+</aside>
+<div id="battle">
+    <ul id="battle-log" data-bind="source: log" data-template="log-message-template">
+    </ul>
+    <div id="oponent">
+        <h3 data-bind="text: monsterFighter.name"></h3>
+        <p>HP: <strong data-bind="text: monsterFighter.hp"></strong></p>
+        <p>Energy: <strong data-bind="text: monsterFighter.mp"></strong></p>
+        <p>MagicAttack: <strong data-bind="text: monsterFighter.magicAttack"></strong></p>
+        <p>MagicDefense: <strong data-bind="text: monsterFighter.magicDefense"></strong></p>
+        <p>MeleAttack: <strong data-bind="text: monsterFighter.meleAttack"></strong></p>
+        <p>MeleDefense: <strong data-bind="text: monsterFighter.meleDefense"></strong></p>
+        <img data-bind="attr: { src: monster.imageUrl }" />
+    </div>
+    <div id="hero-battle">
+        <h3 data-bind="text: heroFighter.name"></h3>
+        <img data-bind="attr: { src: heroFighter.imageUrl }" />
+        <p>
+            HP: <strong data-bind="text: heroFighter.hp"></strong>/<span data-bind="    text: heroFighter.maxHp"></span>
+        </p>
+        <p>
+            Energy: <strong data-bind="text: heroFighter.mp"></strong>/<span data-bind="    text: heroFighter.maxMp">
+        </p>
+        <p>meleAttack: <strong data-bind="text: heroFighter.meleAttack"></strong></p>
+        <p>meleDefense: <strong data-bind="text: heroFighter.meleDefense"></strong></p>
+        <p>magicAttack: <strong data-bind="text: heroFighter.magicAttack"></strong></p>
+        <p>magicDefense: <strong data-bind="text: heroFighter.magicDefense"></strong></p>
+    </div>
+
+    <script type="text/x-kendo-template" id="log-message-template">
+    <li>
+        <p data-bind="text: message"></p>
+    </li>
+    </script>

@@ -1,0 +1,34 @@
+﻿<aside id="actions">
+    <h3>Actions</h3>
+    <div class="action" data-bind="click: gotoMain">
+        <p>Main</p>
+    </div>
+    <div class="action" data-bind="click: gotoMonster">
+        <p>Attack monster</p>
+    </div>
+    <div class="action" data-bind="click: gotoPlayer">
+        <p>Attack player</p>
+    </div>
+    <div class="action" data-bind="click: gotoHeal">
+        <p>Train</p>
+    </div>
+    <div class="action" data-bind="click: gotoShop">
+        <p>Shop</p>
+    </div>
+</aside>
+<div id="dispaly">
+    <h3>Battle</h3>
+    <div class="stats">
+        <p>Name: <strong data-bind="text: name"></strong></p>
+        <p>HP: <strong data-bind="text: hp"></strong></p>
+        <p>MP: <strong data-bind="text: mp"></strong></p>
+        <p>MagicAttack: <strong data-bind="text: magicAttack"></strong></p>
+        <p>MagicDefense: <strong data-bind="text: magicDefense"></strong></p>
+        <p>MeleAttack: <strong data-bind="text: meleAttack"></strong></p>
+        <p>MeleDefense: <strong data-bind="text: meleDefense"></strong></p>
+    </div>
+    <img data-bind="attr: { src: imageUrl }" />
+    <div data-bind="attr: { id: id }" class="start-battle">
+        <button data-bind="click: startBattle">Start battle</button>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿<br />
+<a href="#/admin/register" id="register-link-btn">Register Admin</a>
+<a href="#/users" id="get-users-btn">Get All Users</a>
+<a href="#/monsters" id="get-monsters-btn">Get All Monsters</a>
+<a href="#/items" id="get-items-btn">Get All Items</a>
+<a href="#" id="logout-btn" ng-click="logoutAdmin()">Logout</a>
+
+<form id="admin-login-form">
+    <label for="tb-item-name">Name</label>
+    <input type="text" id="tb-item-name" ng-model="item.name" />
+    <br />
+    <label for="tb-item-description">Description</label>
+    <input type="text" id="tb-item-description" ng-model="item.description" />
+    <br />
+    <label for="tb-mele-attack-item">Mele Attack</label>
+    <input type="text" id="tb-mele-attack-item" ng-model="item.meleAttack" />
+    <br />
+    <label for="tb-magic-attack-item">Magic Attack</label>
+    <input type="text" id="tb-magic-attack-item" ng-model="item.magicAttack" />
+    <br />
+    <label for="tb-magic-defense-item">Magic Defense</label>
+    <input type="text" id="tb-magic-defense-item" ng-model="item.magicDefense" />
+    <br />
+    <label for="tb-mele-defense-item">Mele Defense</label>
+    <input type="text" id="tb-mele-defense-item" ng-model="item.meleDefense" />
+    <br />
+    <label for="tb-category-item">Category</label>
+    <input type="text" id="tb-category-item" ng-model="item.itemCategory" />
+    <br />
+    <label for="tb-image-item">Image</label>
+    <input type="text" id="tb-image-item" ng-model="item.imageUrl" />
+    <br />
+    <label for="tb-hp-item">HP</label>
+    <input type="text" id="tb-hp-item" ng-model="item.hp" />
+    <br />
+    <label for="tb-mp-item">MP</label>
+    <input type="text" id="tb-mp-item" ng-model="item.mp" />
+    <br />
+    <br />
+    <a href="#/item/{{item.itemId}}" id="item-update-btn" ng-click="updateItem()">Update</a>
+</form>
